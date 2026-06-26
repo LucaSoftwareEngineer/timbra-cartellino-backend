@@ -1,7 +1,6 @@
 package com.luca.engineer.dto.request;
 
 import com.luca.engineer.exceptions.ValidationGroups;
-import com.luca.engineer.models.Ruolo;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

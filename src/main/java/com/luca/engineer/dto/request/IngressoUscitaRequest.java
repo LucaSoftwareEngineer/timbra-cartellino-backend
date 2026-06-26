@@ -30,15 +30,13 @@ public class IngressoUscitaRequest {
 	
 	@NotNull(
 		groups = {
-			ValidationGroups.Create.class,
-			ValidationGroups.Update.class
+			ValidationGroups.Create.class
 		}, 
 		message = "id dipendente mancante"
 	)
 	@NotBlank(
 		groups = {
-			ValidationGroups.Create.class,
-			ValidationGroups.Update.class
+			ValidationGroups.Create.class
 		}, 
 		message = "id dipendente mancante"
 	)

@@ -1,6 +1,7 @@
 package com.luca.engineer.dto.request;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import com.luca.engineer.exceptions.ValidationGroups;
 
@@ -24,9 +25,9 @@ public class IngressoUscitaRequest {
 	private String id;
 	
 	@NotNull(groups = {ValidationGroups.Create.class}, message = "data ingresso mancante")
-	private LocalDate dataIngresso;
+	private LocalDateTime dataIngresso;
 	
-	private LocalDate dataUscita;
+	private LocalDateTime dataUscita;
 	
 	@NotNull(
 		groups = {

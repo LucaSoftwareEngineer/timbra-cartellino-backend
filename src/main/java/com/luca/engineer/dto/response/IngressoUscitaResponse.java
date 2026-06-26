@@ -1,6 +1,7 @@
 package com.luca.engineer.dto.response;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import com.luca.engineer.models.Dipendente;
 
@@ -18,8 +19,8 @@ import lombok.ToString;
 public class IngressoUscitaResponse {
 
 	private String id;
-	private LocalDate dataIngresso;
-	private LocalDate dataUscita;
+	private LocalDateTime dataIngresso;
+	private LocalDateTime dataUscita;
 	private Dipendente dipendente;
 	
 }

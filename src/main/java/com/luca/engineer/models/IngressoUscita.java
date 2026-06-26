@@ -1,7 +1,7 @@
 package com.luca.engineer.models;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
@@ -24,8 +24,8 @@ public class IngressoUscita implements Serializable {
 	
 	@Id
 	private String id;
-	private LocalDate dataIngresso;
-	private LocalDate dataUscita;
+	private LocalDateTime dataIngresso;
+	private LocalDateTime dataUscita;
 	private Dipendente dipendente;
 	
 }

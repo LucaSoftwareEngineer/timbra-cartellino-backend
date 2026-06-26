@@ -11,11 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.luca.engineer.dto.request.RuoloRequest;
+import com.luca.engineer.dto.response.MessageResponse;
 import com.luca.engineer.dto.response.RuoloResponse;
 import com.luca.engineer.exceptions.ValidationGroups;
 import com.luca.engineer.services.implementations.RuoloService;
 
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -48,5 +51,9 @@ public class RuoloController {
 		return ResponseEntity.ok(ruoloService.getById(id));
 	}
 	
+	@DeleteMapping("delete/{id}")
+	public ResponseEntity<MessageResponse> deleteById(@PathVariable String id) throws Exception {
+		return ResponseEntity.ok(ruoloService.delete(id));
+	}
 
 }

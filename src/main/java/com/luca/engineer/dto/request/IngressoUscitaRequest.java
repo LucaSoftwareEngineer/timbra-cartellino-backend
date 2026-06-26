@@ -24,7 +24,6 @@ public class IngressoUscitaRequest {
 	private String id;
 	
 	@NotNull(groups = {ValidationGroups.Create.class}, message = "data ingresso mancante")
-	@NotBlank(groups = {ValidationGroups.Create.class}, message = "data ingresso mancante")
 	private LocalDate dataIngresso;
 	
 	private LocalDate dataUscita;

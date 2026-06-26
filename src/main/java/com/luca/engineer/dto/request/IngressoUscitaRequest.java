@@ -17,7 +17,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class IIngressoUscitaRequest {
+public class IngressoUscitaRequest {
 
 	@NotNull(groups = {ValidationGroups.Update.class}, message = "id ingresso uscita mancante")
 	@NotBlank(groups = {ValidationGroups.Update.class}, message = "id ingresso uscita mancante")

@@ -15,7 +15,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class IIngressoUscitaResponse {
+public class IngressoUscitaResponse {
 
 	private String id;
 	private LocalDate dataIngresso;

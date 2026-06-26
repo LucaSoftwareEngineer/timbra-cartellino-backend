@@ -1,5 +1,6 @@
 package com.luca.engineer.models;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 import org.springframework.data.annotation.Id;
@@ -17,8 +18,10 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class IngressoUscita {
+public class IngressoUscita implements Serializable {
 
+	private static final long serialVersionUID = 7408802569881391757L;
+	
 	@Id
 	private String id;
 	private LocalDate dataIngresso;
